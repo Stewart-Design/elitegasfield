@@ -1,0 +1,70 @@
+hero:
+  heading: Powering the Energy Revolution
+  subheading: Premium oilfield services engineered for excellence. From water hauling to equipment logistics, we deliver zero-compromise solutions across the Marcellus and Utica Shale plays.
+  image: 
+  ctas:
+    - text: Explore Services
+      url: "#services"
+      color: s-blue
+    - text: Partner With Us
+      url: "#contact"
+      color:
+  factoids:
+    - number: 13+
+      text: Years of Excellence
+    - number: 24/7
+      text: operational Support
+    - number: 100%
+      text: Safety Commitment
+services:
+  label: Full-Spectrum Solutions
+  heading: Services Built for Performance
+  subheading: Comprehensive oilfield support designed to keep your operations running at peak efficiency
+  items:
+    - heading: Water & Fluid Hauling
+      icon:
+      text: >-
+        Precision transport of water, mud, flowback fluid, and production water. Multiple yard locations ensure rapid response times across the tri-state region.
+    - heading: Heavy Equipment Logistics
+      icon:
+      text: >-
+        Expert pipe hauling and equipment moves with specialized winch truck services. Your critical assets delivered safely, on time, every time.
+    - heading: Hot-Shot Trucking
+      icon:
+      text: >-
+        Urgent deliveries when downtime isn't an option. Our hot-shot services get your critical supplies where they need to be, fast.
+    - heading: Skilled General Labor
+      icon:
+      text: >-
+        Professional crews trained in the latest safety protocols. Flexible workforce solutions that scale with your project demands.
+why_us:
+  heading: Why Industry Leaders Choose Elite
+  subheading: >-
+    Since 2012, we've built our reputation on an unwavering commitment to safety, reliability, and operational excellence. When your project demands precision, you demand Elite.
+  items:
+    - heading: Safety-First Culture
+      icon:
+      text: ISNetworld and PICS certified with cutting-edge training programs that eliminate workplace hazards
+    - heading: Strategic Regional Presence
+      icon:
+      text: Multiple Western PA yard locations for rapid deployment across Pennsylvania, West Virginia, and Ohio
+    - heading: Modern Fleet & Equipment
+      icon:
+      text: Meticulously maintained vehicles and equipment ensure maximum uptime and operational reliability
+    - heading: Partnership Approach
+      icon:
+      text: We don't just provide services—we become an extension of your team, invested in your success
+locations:
+  heading: Tri-State Coverage
+  text: Strategically positioned to serve the most productive shale plays in the region with unmatched response times
+  items:
+    - Pennsylvania
+    - West Virginia
+    - Ohio
+cta:
+  heading: Ready to Elevate Your Operations?
+  text: >-
+    Join the industry leaders who trust Elite Gasfield Services for mission-critical support. Let’s discuss how we can power your next project.
+  ctas:
+    - text: Request a Consultation
+      url: /contact
