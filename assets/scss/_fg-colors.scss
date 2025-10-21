@@ -1,13 +1,15 @@
 // For Good
 
 // Primary
-$s-blue: #0054a6;
+$s-blue: #002957;
+$s-blue-light: #27AAE1;
+$s-black: #090203;
 $s-purple: #6f42c1;
 $s-green: #39B54A;
 
 $custom-colors: (
   "white": #fff,
   "s-blue": $s-blue,
-  "s-purple": $s-purple,
-  "s-green": $s-green
+  "s-blue-light": $s-blue-light,
+  "s-black": $s-black
 );

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <main class="py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 mx-md-auto jgb-main-content">
+          {{ range .Params.locations }}
+            <div class="p-4 p-md-5 p-xl-6 rounded-4 shadow-lg bg-white mb-6">
+              <h2 class="h4">{{ .title }}</h2>
+              <p>
+                {{ range .lines }}
+                  <span class="d-block">{{ . }}</span>
+                {{ end }}
+              </p>
+              <p><span class="fa-solid fa-location-dot text-s-blue-light"></span> <a class="text-decoration-none text-s-blue-light" href="{{ .map_link }}">View on Map</a></p>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

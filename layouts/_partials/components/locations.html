@@ -1,0 +1,19 @@
+<section class="py-7 text-center" aria-labelledby="locations-label">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="my-n9 p-4 p-md-5 p-xl-6 rounded-4 shadow-lg bg-white">
+          <span class="fa-solid fa-location-dot display-3 text-s-blue-light mb-4"></span>
+          <h2 id="locations-label" class="h1 libre-franklin-black">{{ .heading }}</h2>
+          <p class="mt-5 fs-4">{{ .text }}</p>
+          <p class="mt-5 mb-0">
+            {{ range .items }}
+              <span class="btn btn-outline-s-blue-light rounded-pill d-inline-block mx-2">{{ . }}</span>
+            {{ end }}
+          </p>
+          <p class="mt-5">View <a href="/locations/">all locations</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

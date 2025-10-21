@@ -1,0 +1,24 @@
+<section class="py-6 text-center mb-n7">
+  <div class="container pt-5">
+    <p class="text-uppercase text-s-blue-light libre-franklin-bold"><strong>{{ .label }}</strong></p>
+    <h2 class="display-4 libre-franklin-black-thin-italic">{{ .heading }}</h2>
+    {{ with .subheading }}
+      <p class="h5 mt-4">{{ . }}</p>
+    {{ end }}
+    {{ with .items }}
+      <div class="row gx-lg-5 mt-6 mb-n6">
+        {{ range . }}
+          <div class="col-lg-6 mb-5">
+            <div class="p-4 p-md-5 shadow-lg rounded-4 h-100 bg-white">
+              <p class="mb-0">
+                <span class="fa-solid fa-{{ .icon }} display-1 text-s-blue-light mb-4"></span>
+                <span class="h2 d-block libre-franklin-black">{{ .heading }}</span>
+                <span class="d-block">{{ .text }}</span>
+              </p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

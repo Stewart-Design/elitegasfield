@@ -1,5 +1,5 @@
 {
-  "name": "coveredbysentinel",
+  "name": "elitegasfield",
   "version": "1.0.0",
   "description": "Sentinel Theme",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stewart-Design/sentinel.git"
+    "url": "git+https://github.com/Stewart-Design/elitegasfield.git"
   },
   "author": "Adam Glenn",
   "bugs": {
-    "url": "https://github.com/Stewart-Design/sentinel/issues"
+    "url": "https://github.com/Stewart-Design/elitegasfield/issues"
   },
-  "homepage": "https://github.com/Stewart-Design/sentinel#readme",
+  "homepage": "https://github.com/Stewart-Design/elitegasfield#readme",
   "dependencies": {
     "micromatch": ">=4.0.8",
     "@fullhuman/postcss-purgecss": "^6.0.0",

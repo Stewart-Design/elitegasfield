@@ -1,14 +1,18 @@
 hero:
   heading: Powering the Energy Revolution
   subheading: Premium oilfield services engineered for excellence. From water hauling to equipment logistics, we deliver zero-compromise solutions across the Marcellus and Utica Shale plays.
-  image: 
+  background_image: /img/oil-tanker.jpg
   ctas:
     - text: Explore Services
-      url: "#services"
+      url: /services/
       color: s-blue
-    - text: Partner With Us
-      url: "#contact"
+      icon:
+      btn_style:
+    - text: (724) 728-2929
+      url: "tel:7247282929"
       color:
+      icon: phone
+      btn_style: outline
   factoids:
     - number: 13+
       text: Years of Excellence
@@ -22,19 +26,19 @@ services:
   subheading: Comprehensive oilfield support designed to keep your operations running at peak efficiency
   items:
     - heading: Water & Fluid Hauling
-      icon:
+      icon: droplet
       text: >-
         Precision transport of water, mud, flowback fluid, and production water. Multiple yard locations ensure rapid response times across the tri-state region.
     - heading: Heavy Equipment Logistics
-      icon:
+      icon: truck
       text: >-
         Expert pipe hauling and equipment moves with specialized winch truck services. Your critical assets delivered safely, on time, every time.
     - heading: Hot-Shot Trucking
-      icon:
+      icon: bolt
       text: >-
         Urgent deliveries when downtime isn't an option. Our hot-shot services get your critical supplies where they need to be, fast.
     - heading: Skilled General Labor
-      icon:
+      icon: user-helmet-safety
       text: >-
         Professional crews trained in the latest safety protocols. Flexible workforce solutions that scale with your project demands.
 why_us:
@@ -61,10 +65,3 @@ locations:
     - Pennsylvania
     - West Virginia
     - Ohio
-cta:
-  heading: Ready to Elevate Your Operations?
-  text: >-
-    Join the industry leaders who trust Elite Gasfield Services for mission-critical support. Let’s discuss how we can power your next project.
-  ctas:
-    - text: Request a Consultation
-      url: /contact

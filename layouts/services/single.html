@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <main class="py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-md-auto jgb-main-content lh-lg mb-5">
+          <p class="fs-3 mb-5">{{ .Params.intro }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 mx-md-auto jgb-main-content">
+          {{ with .Params.services }}
+            <ul class="list-unstyled fs-5" style="column-count: 2;">
+              {{ range . }}
+                <li class="ps-5 position-relative"><span class="fa-solid fa-arrow-circle-right text-s-blue-light position-absolute" style="left: 10px; top: 5px;"></span>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

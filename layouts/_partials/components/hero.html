@@ -1,7 +1,46 @@
-{{ with site.Data.home }}
-  <main class="py-6">
-    <div class="container">
-      <h2></h2>
-    </div>
-  </main>
+{{ $src := .background_image }}
+
+{{ $image := "" }}
+{{/*  Get the image, either from its remote or local source  */}}
+{{ if hasPrefix $src "http"}}
+  {{ $image = resources.GetRemote .background_image }}
+{{ else }}
+  {{ $image = resources.Get .background_image }}
 {{ end }}
+
+{{/* Resize images and add them to a variable  */}}
+{{ if and $image (ne $image.MediaType.SubType "svg") }}{{ $src = ($image.Fill "1920x1080 webp").RelPermalink }}{{ end }}
+
+<main id="topper" class="py-6 bg-s-black text-white s-bg-tint" style="background-image: url('{{ $src }}'); background-size: cover; background-position: center">
+  <div class="container pt-6 position-relative s-z-index-content">
+    <div class="row">
+      <div class="col-xl-8">
+        <h2 class="display-3 mb-5 libre-franklin-black-italic">{{ .heading }}</h2>
+        {{ with .subheading }}
+          <p class="h5 mb-5">{{ . }}</p>
+        {{ end }}
+        {{ with .ctas }}
+          <p>
+            {{ range . }}
+              <a class="btn btn-{{ if eq .btn_style "outline" }}outline-white{{ else }}s-blue-light{{ end }} btn-lg mb-1 me-1" href="{{ .url }}">{{ with .icon }}<span class="fa-solid fa-{{ . }}"></span> {{ end }}{{ .text }}</a>
+            {{ end }}
+          </p>
+        {{ end }}
+      </div>
+    </div>
+    {{ with .factoids }}
+      <div class="row text-center gx-lg-5">
+        {{ range . }}
+          <div class="col-lg-4 mb-5 mt-4">
+            <div class="p-4 p-xl-5">
+              <p>
+                <span class="display-4 d-block text-s-blue-light libre-franklin-black">{{ .number }}</span>
+                <span class="d-block">{{ .text }}</span>
+              </p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</main>

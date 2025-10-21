@@ -1,0 +1,13 @@
+<section class="pt-9 pb-8 text-center bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-lg-auto">
+        <h2 class="display-5 libre-franklin-black-italic">{{ .heading }}</h2>
+        <p class="my-4 fs-4">{{ .text }}</p>
+        {{ range .ctas }}
+          <a class="btn btn-s-blue-light btn-lg" href="{{ .url }}">{{ .text }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

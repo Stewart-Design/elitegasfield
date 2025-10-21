@@ -1,0 +1,78 @@
+<section id="send-message" class="py-8">
+  <div class="container">
+    <div class="row gx-lg-5 gx-xl-6">
+      <div class="col-lg-6 mb-6 mb-lg-0">
+        <form class="bg-light p-5"
+          name="elite-contact-new"
+          action="/form-success"
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true">
+          <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry elitegasfield.com" />
+
+          <div class="mb-3">
+            <label for="nameInput" class="form-label"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="name" type="text" class="form-control" id="nameInput" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="emailInput" class="form-label"><strong>Email Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="email" type="email" class="form-control" id="emailInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phoneInput" class="form-label"><strong>Phone Number</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="phone" type="tel" class="form-control" id="phoneInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="orderInput" class="form-label"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <textarea name="message" class="form-control" id="orderInput" rows="3"></textarea>
+          </div>
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit" class="btn btn-s-blue rounded-0 px-3 mt-3">Contact</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        {{ with site.Data.footer.contact }}
+          {{ with .address }}
+            <h2 class="h3">Address</h2>
+            <p class="fs-4">
+              {{ range . }}
+                {{ . }}
+              {{ end }}
+            </p>
+          {{ end }}
+          <h2 class="h3 mt-5">Phone</h2>
+          <ul class="list-unstyled">
+            {{ with .phone }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-phone position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+            {{ with .mobile }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-mobile position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+          </ul>
+          <h2 class="h3 mt-5">Email</h2>
+          <ul class="list-unstyled">
+            {{ with .email }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-envelope position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="mailto:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+          </ul>
+
+          {{ with .fax }}
+            <h2 class="h3 mt-5">Fax</h2>
+            <ul class="list-unstyled">
+              <li class="position-relative ps-4"><span class="fa-solid fa-fax position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+            </ul>
+          {{ end }}
+          <h2 class="h3 mt-5">Social</h2>
+          <ul class="list-unstyled">
+            {{ range site.Data.settings.social_media_accounts }}
+              <li class="position-relative ps-4"><span class="fa-brands fa-{{ .icon }} position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="{{ .url }}">{{ .platform }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
