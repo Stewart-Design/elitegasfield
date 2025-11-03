@@ -1,7 +1,7 @@
 hero:
   heading: Powering the Energy Revolution
   subheading: Premium oilfield services engineered for excellence. From water hauling to equipment logistics, we deliver zero-compromise solutions across the Marcellus and Utica Shale plays.
-  background_image: /img/oil-tanker.jpg
+  background_image: /img/tanker.jpg
   ctas:
     - text: Explore Services
       url: /services/
@@ -14,7 +14,7 @@ hero:
       icon: phone
       btn_style: outline
   factoids:
-    - number: 13+
+    - number: 14+
       text: Years of Excellence
     - number: 24/7
       text: operational Support
@@ -33,18 +33,10 @@ services:
       icon: truck
       text: >-
         Expert pipe hauling and equipment moves with specialized winch truck services. Your critical assets delivered safely, on time, every time.
-    - heading: Hot-Shot Trucking
-      icon: bolt
-      text: >-
-        Urgent deliveries when downtime isn't an option. Our hot-shot services get your critical supplies where they need to be, fast.
-    - heading: Skilled General Labor
-      icon: user-helmet-safety
-      text: >-
-        Professional crews trained in the latest safety protocols. Flexible workforce solutions that scale with your project demands.
 why_us:
   heading: Why Industry Leaders Choose Elite
   subheading: >-
-    Since 2012, we've built our reputation on an unwavering commitment to safety, reliability, and operational excellence. When your project demands precision, you demand Elite.
+    Since 2011, we've built our reputation on an unwavering commitment to safety, reliability, and operational excellence. When your project demands precision, you demand Elite.
   items:
     - heading: Safety-First Culture
       icon:

@@ -5,7 +5,7 @@ draft:
 type:
 ---
 
-When you work with Elite, you get peace of mind. All Elite drivers operate late model 2012 or newer Peterbilt or International tractors that are regularly inspected, serviced, and maintained to ensure reliable, high-quality performance.
+When you work with Elite, you get peace of mind. All Elite drivers operate late model Peterbilt or International tractors that are regularly inspected, serviced, and maintained to ensure reliable, high-quality performance.
 
 ## We offer:
 

@@ -31,13 +31,10 @@ Field Supervisors are on the jobsite to:
 
 Driving performance is as critical to our company’s success as any other aspect of our operation. To continually monitor and improve driving performance, we have implemented:
 
-  - Speed Gauge – Tracks driver habits and sends emails instantaneously if a driver exceeds the
-  - threshold set by the safety team. All drivers are scored on speeding and awarded for safe driving habits.
   - Lytx Dash Cams – 3rd party company that captures at-risk driving habits and sends the video to the Elite safety team for the purpose of coaching and mentoring our drivers. This tool has changed the dynamics of our company.
 
 ## Safety Stats:
 
-  - 5 million miles without a major accident and counting
   - IS NET World / Avetta 3rd party auditing services required by some of our operators
   - 5 year TRIR (Total Recordable Incident Rate) .0627 / Industry Average is 4.400
   - 59% reduction in speed since 2015 (tracked by Speed Gauge)
