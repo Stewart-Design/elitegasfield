@@ -46,23 +46,23 @@
           <h2 class="h3 mt-5">Phone</h2>
           <ul class="list-unstyled">
             {{ with .phone }}
-              <li class="position-relative ps-4"><span class="fa-solid fa-phone position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+              <li class="position-relative ps-4"><span class="fa-solid fa-phone position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
             {{ end }}
             {{ with .mobile }}
-              <li class="position-relative ps-4"><span class="fa-solid fa-mobile position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+              <li class="position-relative ps-4"><span class="fa-solid fa-mobile position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
             {{ end }}
           </ul>
           <h2 class="h3 mt-5">Email</h2>
           <ul class="list-unstyled">
             {{ with .email }}
-              <li class="position-relative ps-4"><span class="fa-solid fa-envelope position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="mailto:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+              <li class="position-relative ps-4"><span class="fa-solid fa-envelope position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="mailto:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
             {{ end }}
           </ul>
 
           {{ with .fax }}
             <h2 class="h3 mt-5">Fax</h2>
             <ul class="list-unstyled">
-              <li class="position-relative ps-4"><span class="fa-solid fa-fax position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | safeHTML }}">{{ . | safeHTML }}</a></li>
+              <li class="position-relative ps-4"><span class="fa-solid fa-fax position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
             </ul>
           {{ end }}
           <h2 class="h3 mt-5">Social</h2>
