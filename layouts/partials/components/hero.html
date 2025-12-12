@@ -19,13 +19,10 @@
         {{ with .subheading }}
           <p class="h5 mb-5">{{ . }}</p>
         {{ end }}
-        {{ with .ctas }}
-          <p>
-            {{ range . }}
-              <a class="btn btn-{{ if eq .btn_style "outline" }}outline-white{{ else }}s-blue-light{{ end }} btn-lg mb-1 me-1" href="{{ .url | safeHTML }}">{{ with .icon }}<span class="fa-solid fa-{{ . }}"></span> {{ end }}{{ .text | safeHTML }}</a>
-            {{ end }}
-          </p>
-        {{ end }}
+        <p>
+          <a class="btn btn-s-blue-light btn-lg mb-1 me-1" href="/services">Explore Services</a>
+          <a class="btn btn-outline-white btn-lg mb-1 me-1" href="tel:7247282929"><span class="fa-solid fa-phone"></span> (724) 728-2929</a>
+        </p>
       </div>
     </div>
     {{ with .factoids }}
