@@ -8,7 +8,7 @@
           <p class="mt-5 fs-4">{{ .text }}</p>
           <p class="mt-5 mb-0">
             {{ range .items }}
-              <span class="btn btn-outline-s-blue-light rounded-pill d-inline-block mx-2">{{ . }}</span>
+              <a class="btn btn-outline-s-blue-light rounded-pill d-inline-block mx-2" href="/locations">{{ . }}</a>
             {{ end }}
           </p>
           <p class="mt-5">View <a href="/locations/">all locations</a></p>
