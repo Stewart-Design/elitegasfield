@@ -22,7 +22,7 @@
         {{ with .ctas }}
           <p>
             {{ range . }}
-              <a class="btn btn-{{ if eq .btn_style "outline" }}outline-white{{ else }}s-blue-light{{ end }} btn-lg mb-1 me-1" href="{{ .url }}">{{ with .icon }}<span class="fa-solid fa-{{ . }}"></span> {{ end }}{{ .text }}</a>
+              <a class="btn btn-{{ if eq .btn_style "outline" }}outline-white{{ else }}s-blue-light{{ end }} btn-lg mb-1 me-1" href="{{ .url }}">{{ with .icon }}<span class="fa-solid fa-{{ . }}"></span> {{ end }}{{ .text | urlize }}</a>
             {{ end }}
           </p>
         {{ end }}
