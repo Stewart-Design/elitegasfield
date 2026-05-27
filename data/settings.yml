@@ -14,6 +14,9 @@ site_menu:
   - menu_item: Safety
     url: /safety/
     sub_links:
+  - menu_item: Careers
+    url: /careers/
+    sub_links:
   - menu_item: Locations
     url: /locations/
     sub_links:

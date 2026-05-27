@@ -2,5 +2,5 @@
 title: Careers
 date:
 draft:
-type:
+type: job-application
 ---
