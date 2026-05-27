@@ -1,0 +1,199 @@
+<section id="send-message" class="py-8">
+  <div class="container">
+    <div class="row gx-lg-5 gx-xl-6">
+      <div class="col-lg-6 mb-6 mb-lg-0">
+        <form class="bg-light p-5"
+          name="elite-job-application"
+          action="/form-success"
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true">
+          <input type="hidden" name="subject" data-remove-prefix value="Job application elitegasfield.com" />
+
+          <h2>Information</h2>
+
+          <div class="mb-3">
+            <label for="positionInput" class="form-label"><strong>Position Applying For</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="position" type="text" class="form-control" id="positionInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="referralInput" class="form-label"><strong>Referral Source</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="referral" type="text" class="form-control" id="referralInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="nameInput" class="form-label"><strong>First Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="name" type="text" class="form-control" id="nameInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="lastnameInput" class="form-label"><strong>Last Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="lastname" type="text" class="form-control" id="lastnameInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="dateOfBirthInput" class="form-label"><strong>Date of Birth</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="dateOfBirth" type="date" class="form-control" id="dateOfBirthInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="emailInput" class="form-label"><strong>Email Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="email" type="email" class="form-control" id="emailInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="addressInput" class="form-label"><strong>Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="address" type="text" class="form-control" id="addressInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="cityInput" class="form-label"><strong>City</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="city" type="text" class="form-control" id="citysInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="stateInput" class="form-label"><strong>State</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="state" type="text" class="form-control" id="stateInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="zipInput" class="form-label"><strong>Zipcode</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="zip" type="text" class="form-control" id="zipInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="yearsAddressInput" class="form-label"><strong>How Many Years at Current Address?</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="yearsAddress" type="text" class="form-control" id="yearsAddressInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phoneInput" class="form-label"><strong>Home Phone</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="phone" type="tel" class="form-control" id="phoneInput" required>
+          </div>
+
+          <h2 class="mt-5">Employment History</h2>
+
+          <div class="mb-3">
+            <label for="employmentAddressInput" class="form-label"><strong>Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentAddress" type="text" class="form-control" id="employmentAddressInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentCityInput" class="form-label"><strong>City</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentCity" type="text" class="form-control" id="employmentCityInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentStateInput" class="form-label"><strong>State</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentState" type="text" class="form-control" id="employmentStateInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentContactNameInput" class="form-label"><strong>Contact Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="contactName" type="text" class="form-control" id="employmentContactNameInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentContactPhoneInput" class="form-label"><strong>Phone</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentContactPhone" type="text" class="form-control" id="employmentContactPhoneInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentContactEmployerInput" class="form-label visually-hidden"><strong>May we contact this employer?</strong></label>
+            <div class="form-check ps-0 mt-3">
+              <select class="form-select" aria-label="May we contact this employer?">
+                <option selected>May we contact this employer?</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="mayWeContactInput" class="form-label"><strong>Reason For Leaving</strong></label>
+            <textarea name="mayWeContact" class="form-control" id="mayWeContactInput" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="notesInput" class="form-label"><strong>Notes</strong></label>
+            <textarea name="notes" class="form-control" id="notesInput" rows="3"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentPositionHeldInput" class="form-label"><strong>Position Held</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentPositionHeld" type="text" class="form-control" id="employmentPositionHeldInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentFromDateInput" class="form-label"><strong>From Date</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentFromDate" type="date" class="form-control" id="employmentFromDateInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employmentToDateInput" class="form-label"><strong>To Date</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employmentToDate" type="date" class="form-control" id="employmentToDateInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employerNameInput" class="form-label"><strong>Employer Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employerName" type="text" class="form-control" id="employerNameInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employerEquipmentDrivenInput" class="form-label"><strong>Equipment Driven</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employerEquipmentDriven" type="text" class="form-control" id="employerEquipmentDrivenInput" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="employerNumberOfStatesDrivenInput" class="form-label"><strong>Number of States Driven</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <input name="employerNumberOfStatesDriven" type="text" class="form-control" id="employerNumberOfStatesDrivenInput" required>
+          </div>
+
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit" class="btn btn-s-blue rounded-0 px-3 mt-3">Contact</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        {{ with site.Data.footer.contact }}
+          {{ with .address }}
+            <h2 class="h3">Address</h2>
+            <p class="fs-4">
+              {{ range . }}
+                {{ . }}
+              {{ end }}
+            </p>
+          {{ end }}
+          <h2 class="h3 mt-5">Phone</h2>
+          <ul class="list-unstyled">
+            {{ with .phone }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-phone position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+            {{ with .mobile }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-mobile position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+          </ul>
+          <h2 class="h3 mt-5">Email</h2>
+          <ul class="list-unstyled">
+            {{ with .email }}
+              <li class="position-relative ps-4"><span class="fa-solid fa-envelope position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="mailto:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
+            {{ end }}
+          </ul>
+
+          {{ with .fax }}
+            <h2 class="h3 mt-5">Fax</h2>
+            <ul class="list-unstyled">
+              <li class="position-relative ps-4"><span class="fa-solid fa-fax position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="tel:{{ . | urlize }}">{{ . | safeHTML }}</a></li>
+            </ul>
+          {{ end }}
+          <h2 class="h3 mt-5">Social</h2>
+          <ul class="list-unstyled">
+            {{ range site.Data.settings.social_media_accounts }}
+              <li class="position-relative ps-4"><span class="fa-brands fa-{{ .icon }} position-absolute" style="left: 0; top: 2px;"></span><a class="text-decoration-none" href="{{ .url }}">{{ .platform }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
