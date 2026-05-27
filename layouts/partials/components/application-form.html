@@ -153,6 +153,29 @@
           <div data-netlify-recaptcha="true"></div>
           <button type="submit" class="btn btn-s-blue rounded-0 px-3 mt-3">Contact</button>
         </form>
+
+        <script>
+          (function () {
+            var form = document.querySelector('form[name="elite-job-application"]');
+            var subjectInput = form.querySelector('input[name="subject"]');
+            var positionInput = document.getElementById('positionInput');
+            var nameInput = document.getElementById('nameInput');
+            var lastnameInput = document.getElementById('lastnameInput');
+
+            function updateSubject() {
+              var position = positionInput.value.trim();
+              var name = [nameInput.value.trim(), lastnameInput.value.trim()].filter(Boolean).join(' ');
+              var parts = ['Job application'];
+              if (position) parts.push('for ' + position);
+              if (name) parts.push('from ' + name);
+              subjectInput.value = parts.join(' ');
+            }
+
+            positionInput.addEventListener('input', updateSubject);
+            nameInput.addEventListener('input', updateSubject);
+            lastnameInput.addEventListener('input', updateSubject);
+          })();
+        </script>
       </div>
       <div class="col-lg-6">
         {{ with site.Data.footer.contact }}
